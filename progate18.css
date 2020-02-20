@@ -1,0 +1,348 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media(max-width:1000px){
+
+  .menu-icon{
+
+    display:block;}
+
+
+
+}
+
+
+
+
+
+
+
+@media(max-width:1000px) {
+
+
+
+  footer{
+    text-align:center;
+  }
+
+  .top-wrapper h1{
+    font-size:32px;
+  }
+
+  /* 「.heading h2」のfont-sizeを20pxに指定 */
+  .heading h2{
+    font-size:20px;
+  }
+
+
+
+}
+
+
+
+.clear{
+  clear:left;
+}
+
+
+
+@media (max-width:670px) {
+  /* .lessonのwidthを100%に指定してください */
+  .lesson{
+    width:100%;
+  }
+
+  /* <footer>の中身を中央寄せにしてください。 */
+
+
+  .btn{
+     width:100%;
+   }
+
+  .top-wrapper{
+     text-align:left;
+
+   }
+
+   .top-wrapper h1{
+    font-size:24px;
+  }
+
+  /* 「.heading h2」のfont-sizeを20pxに指定 */
+  .heading h2{
+    font-size:14px;
+  }
+
+  .top-wrapper p{
+    font-size:14px;
+  }
+
+  .header-right{
+      display:none;
+    }
+
+  .menu-icon{
+      display:block;
+    }
+
+
+
+
+}
+
+
+
+
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+　display: none;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(hei.top.jpg);
+  background-size:cover;
+  color: white;
+  background-position:center center;
+  text-align: center;
+}
+
+
+
+.top-wrapper::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 138px;
+  left: 0;
+  content: ' ';
+
+}
+
+@media(max-width:670px){
+.top-wrapper::before{
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -247px;
+  left: 0;
+  content: ' ';}
+}
+
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+.btn a{
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position:fixed;
+  top:0;
+
+  /* z-indexを10に指定してください */
+  z-index:10;
+}
+
+
+
+
+
+
+
+
+.logo {
+  width: 124px;
+  margin-top: 0px;
+  margin-left: 0px;
+
+}
+.login {
+  margin-right: 0px;
+
+
+}
+
+.header-left {
+  float: left;
+
+}
+
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.lesson-wrapper {
+
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+
+@media(max-width:1000px){
+.lesson {
+  width: 50%;
+  margin-bottom: 50px;
+}
+}
+
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #b3aeb5;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
+}
